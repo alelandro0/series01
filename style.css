@@ -1,0 +1,789 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+display=swa');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #030303;
+  font-family: 'Bebas Neue', cursive;
+  color: white;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.header {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  background-color: #03030398 ;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+}
+
+
+.menu .navbar ul li {
+  text-decoration: noneF;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu .navbar ul li a {
+  font-size: 22px;
+  padding: 20px;
+  color: white;
+  display: block;
+}
+
+.menu .navbar ul li a:hover {
+  color: #ff2f28;
+}
+
+.menu-icono {
+  width: 25px;
+}
+
+.menu label {
+  cursor: pointer;
+  display: none;
+}
+
+.header-content {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-image: url(/Portada_Series/serie1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+
+}
+
+.header-1 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-self: flex-end;
+}
+
+.header-1 img {
+  width: 300px;
+}
+
+.header-2 {
+  width: 50%;
+  margin-top: 80px;
+  text-align: end;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 60vh;
+}
+
+.btn-2:hover {
+  box-shadow: 0px 0px 2px 2px white;
+}
+
+.header-2 h1 {
+  color: white;
+  font-size: 80px;
+  text-align: center;
+}
+
+.play {
+  width: 100px;
+  height: 100px;
+  margin-top: 48px;
+}
+
+.movies {
+  padding: 50px 0 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+hr {
+  border: 3px solid rgba(128, 128, 128, 0.445);
+  width: 50%;
+  margin-bottom: 40px;
+  margin-top: 19PX;
+}
+
+.box-container-1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+}
+
+img {
+  width: 100%;
+  height: 152px;
+}
+
+ul {
+  display: flex;
+}
+
+.movies2 {
+  color: white;
+  padding-left: 40px;
+  font-size: 28px;
+  text-decoration: none;
+}
+
+.search {
+  width: 200px;
+  height: 30px;
+  margin: 1rem;
+  border-radius: 6px;
+  border: none;
+  padding: 0;
+  outline: none;
+}
+
+.search-n {
+  display: flex;
+}
+
+.search:hover {
+  box-shadow: 0px 0px 2px 2px #ff2f28;
+  border: none;
+}
+
+#iten {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+}
+
+#titulo {
+  color: white;
+  padding-top: 40px;
+}
+
+#iten:hover {
+  border: 3px solid white;
+  border-radius: 12px;
+  color: white;
+}
+
+.content {
+  cursor: pointer;
+  position: relative;
+  
+}
+
+.overlay-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+}
+
+.overlay-video {
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.container-card {
+  height:auto;
+  width: 100%;
+  margin: 15px;
+  padding: 10px;
+  font-size: 1.05rem;
+  background-color: #0d1431;
+  border-radius: 20px;
+}
+
+.container-card img {
+  border-radius: 10%;
+  width: 100%;
+  height: 75%;
+}
+
+.movie-title {
+  color: #f5f5f5f5;
+  font-size: 15px;
+  font-family: sans-serif;
+}
+
+.movie-year {
+  background-color: #248be7;
+  color: #f5f5f5f5;
+  position: relative;
+  font-weight: 900;
+  font-size: 1.05rem;
+  bottom: 4.7vh;
+  left: 2.61vw;
+  width: 50px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+}
+
+@media screen and (max-width: 480px){
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+display=swa');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #030303;
+  font-family: 'Bebas Neue', cursive;
+  color: white;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.header {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  background-color: #03030398 ;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+}
+
+
+.menu .navbar ul li {
+  text-decoration: noneF;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu .navbar ul li a {
+  font-size: 22px;
+  padding: 20px;
+  color: white;
+  display: block;
+}
+
+.menu .navbar ul li a:hover {
+  color: #ff2f28;
+}
+
+.menu-icono {
+  width: 25px;
+}
+
+.menu label {
+  cursor: pointer;
+  display: none;
+}
+
+.header-content {
+  display: flex;
+  width: 100%;
+  height: 50vh;
+  background-image: url(/Portada_Series/serie1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.header-1 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-self: flex-end;
+}
+
+.header-1 img {
+  width: 300px;
+}
+
+.header-2 {
+  width: 50%;
+  margin-top: 80px;
+  text-align: end;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 60vh;
+}
+
+.btn-2:hover {
+  box-shadow: 0px 0px 2px 2px white;
+}
+
+.header-2 h1 {
+  color: white;
+  font-size: 40px;
+  text-align: center;
+}
+
+.play {
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
+.movies {
+  padding: 50px 0 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  font-size: 35px;
+  margin-bottom: 20px;
+  padding: 0 0 0 20px;
+}
+
+hr {
+  border: 3px solid rgba(255, 255, 255, 0.403);
+  width: 50%;
+  margin-bottom: 40px;
+  padding: 0 0 0 20px;
+}
+
+.box-container-1 {
+  display: flex;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+img {
+  width: 100%;
+  height: 152px;
+}
+
+ul {
+  display: flex;
+}
+
+.movies2 {
+  color: #ff2f28;
+  padding-left: 40px;
+  font-size: 20px;
+}
+
+.search {
+  width: 200px;
+  height: 30px;
+  margin: 1rem;
+  border-radius: 6px;
+  border: none;
+  padding: 0;
+  outline: none;
+}
+
+.search-n {
+  display: flex;
+}
+
+.search:hover {
+  box-shadow: 0px 0px 2px 2px #ff2f28;
+  border: none;
+}
+
+#iten {
+  text-decoration: none;
+  color: #ff2f28;
+  font-size: 20px;
+}
+
+#titulo {
+  color: #ff2f28;
+  padding: 0 20px 0 0;
+}
+
+#iten:hover {
+  border: 3px solid white;
+  border-radius: 12px;
+  color: white;
+}
+
+.content {
+  cursor: pointer;
+  position: relative;
+  
+}
+
+.overlay-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+}
+
+.overlay-video {
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.container-card {
+  height:auto;
+  width: 100%;
+  margin: 0px;
+  padding: 10px;
+  font-size: 1.05rem;
+  background-color: #0d1431;
+  border-radius: 20px;
+}
+
+.container-card img {
+  border-radius: 10%;
+  width: 100%;
+  height: 75%;
+}
+
+.movie-title {
+  color: #f5f5f5f5;
+  font-size: 15px;
+  font-family: sans-serif;
+  width: 75%;
+}
+
+.movie-year {
+  background-color: #248be7;
+  color: #f5f5f5f5;
+  position: relative;
+  font-weight: 900;
+  font-size: 1.05rem;
+  bottom: 4.7vh;
+  left: 2.61vw;
+  width: 80px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 0;
+}
+
+#container {
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+}
+
+.fa-2x {
+  font-size: 2em;
+  padding: 20px;
+}
+
+}
+
+@media screen and (max-width: 768px){
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+display=swa');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #030303;
+  font-family: 'Bebas Neue', cursive;
+  color: white;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.header {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  background-color: #03030398 ;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+}
+
+
+.menu .navbar ul li {
+  text-decoration: noneF;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu .navbar ul li a {
+  font-size: 22px;
+  padding: 20px;
+  color: white;
+  display: block;
+}
+
+.menu .navbar ul li a:hover {
+  color: #ff2f28;
+}
+
+.menu-icono {
+  width: 25px;
+}
+
+.menu label {
+  cursor: pointer;
+  display: none;
+}
+
+.header-content {
+  display: flex;
+  width: 100%;
+  height: 80vh;
+  background-image: url(/Portada_Series/serie1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.header-1 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-self: flex-end;
+}
+
+.header-1 img {
+  width: 300px;
+}
+
+.header-2 {
+  width: 50%;
+  margin-top: 80px;
+  text-align: end;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 60vh;
+}
+
+.btn-2:hover {
+  box-shadow: 0px 0px 2px 2px white;
+}
+
+.header-2 h1 {
+  color: white;
+  font-size: 60px;
+  text-align: center;
+}
+
+.play {
+  width: 100px;
+  height: 100px;
+  margin-top: 48px;
+}
+
+.movies {
+  padding: 50px 0 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  font-size: 35px;
+  margin-bottom: 20px;
+  /* padding: 0 0 0 45px; */
+}
+
+hr {
+  border: 3px solid #ff2f28;
+  width: 50%;
+  margin-bottom: 40px;
+}
+
+.box-container-1 {
+  /* display: grid; */
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  justify-content: center;
+}
+
+img {
+  width: 100%;
+  height: 152px;
+}
+
+ul {
+  display: flex;
+}
+
+.movies2 {
+  color: #ff2f28;
+  padding-left: 40px;
+  font-size: 28px;
+}
+
+.search {
+  width: 200px;
+  height: 30px;
+  margin: 1rem;
+  border-radius: 6px;
+  border: none;
+  padding: 0;
+  outline: none;
+}
+
+.search-n {
+  display: flex;
+}
+
+.search:hover {
+  box-shadow: 0px 0px 2px 2px #ff2f28;
+  border: none;
+}
+
+#iten {
+  text-decoration: none;
+  color: #ff2f28;
+  font-size: 30px;
+}
+
+#titulo {
+  color: #ff2f28;
+}
+
+#iten:hover {
+  border: 3px solid white;
+  border-radius: 12px;
+  color: white;
+}
+
+.content {
+  cursor: pointer;
+  position: relative;
+  
+}
+
+.overlay-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+}
+
+.overlay-video {
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.container-card {
+  height:auto;
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  font-size: 1.05rem;
+  background-color: #0d1431;
+  border-radius: 20px;
+}
+
+.container-card img {
+  border-radius: 10%;
+  width: 100%;
+  height: 75%;
+}
+
+.movie-title {
+  color: #f5f5f5f5;
+  font-size: 15px;
+  font-family: sans-serif;
+}
+
+.movie-year {
+  background-color: #248be7;
+  color: #f5f5f5f5;
+  position: relative;
+  font-weight: 900;
+  font-size: 1.05rem;
+  bottom: 4.7vh;
+  left: 2.61vw;
+  width: 50px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#container {
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+}
+.pelis-h2{
+  padding: 0 0 0 45px;
+}
+
+.fa-2x {
+  font-size: 2em;
+  padding: 0 0 0 45px;
+}
+
+}

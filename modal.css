@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+} */
+/*:::Boton-Modal:::*/
+.boton-modal {
+  padding: 40px;
+  background-color: #fff;
+}
+.boton-modal label {
+  padding: 10px 15px;
+  background-color: #5488a3;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+.boton-modal label:hover {
+  background-color: #185e83;
+}
+/*:::Fin Boton-Modal:::*/
+
+/*:::Ventana Modal:::*/
+#btn-modal {
+  display: none;
+  
+}
+.content-modal .modal-imagen {
+  width: 100%; /* Asegura que la imagen ocupe todo el ancho disponible */
+  height: auto; /* Ajusta automáticamente la altura de la imagen */
+  max-width: 100%; /* Establece un máximo de ancho para la imagen */
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+#modal-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta el video al tamaño del contenedor */
+}
+
+.video-container {
+  display: none;
+  margin-top: 20px;
+  position: relative; /* Añade esta línea */
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.container-modal {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(144, 148, 150, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+#btn-modal:checked ~ .container-modal {
+  display: flex;
+}
+.content-modal {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #030303;
+  border-radius: 4px;
+  position: relative; /* Para permitir la superposición de elementos */
+}
+.content-modal h2 {
+  margin-bottom: 15px;
+  color: white;
+}
+.content-modal p {
+  padding: 15px 0px;
+  color: #9a9a9a;
+}
+
+.info p {
+  display: inline;
+  margin: 0;
+}
+
+.rating {
+  display: inline;
+  background-color: #4d4d4d;
+  color: #fff;
+  font-weight: bold;
+  font-size: 13px;
+  padding: 0px 2px;
+  border-radius: 4px;
+  margin-right: 0px;
+  top: -1px;
+  position: relative;
+}
+
+.description {
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+}
+.content-modal .btn-cerrar {
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-end;
+}
+.content-modal .btn-cerrar label {
+  padding: 7px 10px;
+  background-color: #5488a3;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+.content-modal .btn-cerrar label:hover {
+  background-color: #185e83;
+}
+
+.button {
+  font-size: 17px;
+  border-radius: 12px;
+  background: linear-gradient(
+    180deg,
+    rgb(56, 56, 56) 0%,
+    rgb(36, 36, 36) 66%,
+    rgb(41, 41, 41) 100%
+  );
+  color: rgb(218, 218, 218);
+  border: none;
+  padding: 2px;
+  font-weight: 700;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.button span {
+  border-radius: 10px;
+  padding: 0.8em 1.3em;
+  padding-right: 1.2em;
+  text-shadow: 0px 0px 20px #4b4b4b;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: inherit;
+  transition: all 0.3s;
+  background-color: rgb(29, 29, 29);
+  background-image: radial-gradient(
+      at 95% 89%,
+      rgb(15, 15, 15) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 0% 100%, rgb(17, 17, 17) 0px, transparent 50%),
+    radial-gradient(at 0% 0%, rgb(29, 29, 29) 0px, transparent 50%);
+}
+
+.button:hover span {
+  background-color: rgb(26, 25, 25);
+}
+
+.enlace-reproducir {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 10px;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.enlace-reproducir:hover {
+  color: #ff9900;
+}
+
+/* Agrega una transición de escala al botón y al enlace */
+.button,
+.enlace-reproducir {
+  transition: color 0.3s, transform 0.2s;
+}
+
+/* Agrega un estilo de salto al botón y al enlace cuando se señalan */
+.button:hover,
+.enlace-reproducir:hover {
+  color: #ff9900;
+  transform: translateY(-5px); /* Hace que parezca un salto hacia arriba */
+}
+
+.button-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: repeating-conic-gradient(
+      rgb(48, 47, 47) 0.0000001%,
+      rgb(51, 51, 51) 0.000104%
+    )
+    60% 60%/600% 600%;
+  filter: opacity(10%) contrast(105%);
+  -webkit-filter: opacity(10%) contrast(105%);
+}
+
+.button svg {
+  width: 15px;
+  height: 15px;
+}
+.btn-cerrar {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.758);
+}
+@media screen and (max-width: 800px) {
+  .content-modal {
+    width: 90%;
+  }
+}
+/*:::Fin Ventana Modal:::*/

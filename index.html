@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Series</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="modal.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="menu container">
+        <a href="" class="movies2">MOVIES</a>
+        <label for="menu">
+          <img src="./Portada_Series/menu.png" alt="menu" class="menu-icono" />
+        </label>
+        <nav class="navbar">
+          <ul>
+            <li><a id="iten" href="">Inicio</a></li>
+            <li><a id="iten" href="">Peliculas</a></li>
+            <li><a id="iten" href="">Series</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-content container">
+        <div class="header-1">
+        
+        </div>
+        <div class="header-2">
+          <h1 id="titulo">
+            Las mejores <br />
+            Peliculas
+          </h1>
+          <img src="./Portada_Series/play.png" class="play" alt="" />
+        </div>
+      </div>
+    </header>
+    <section class="movies container">
+      <h2 class="pelis-h2" >Peliculas mas vistas</h2>
+      <div class="search-n">
+        <i class="fas fa-search fa-2x"
+          ><input type="search" id="tipo" name="busquedaSerie" class="search"
+        /></i>
+      </div>
+      <hr />
+      <div class="box-container-1">
+        <section id="container"></section>
+
+        <template id="card-template">
+          <div class="container-card">
+            <img
+              id="imagen-click"
+              class="movie-poster"
+              src=""
+              alt="Poster"
+              loading="lazy"
+            />
+            <h3 class="movie-title"></h3>
+          </div>
+        </template>
+      </div>
+    </section>
+    <!--Ventana Modal-->
+    <input type="checkbox" id="btn-modal" />
+    <div class="container-modal">
+      <label for="btn-modal" class="btn-cerrar"></label>
+      <div class="content-modal">
+        <div class="video-container">
+          <video id="modal-video" controls>
+            <source id="lista" src="" type="video/mp4" />
+            Tu navegador no soporta el elemento de video.
+          </video>
+        </div>
+        <div class="btn-reproducir">
+          <button class="button">
+            <div class="button-overlay"></div>
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 53 58"
+                height="58"
+                width="53"
+              >
+                <path
+                  stroke-width="9"
+                  stroke="currentColor"
+                  d="M44.25 36.3612L17.25 51.9497C11.5833 55.2213 4.5 51.1318 4.50001 44.5885L4.50001 13.4115C4.50001 6.86824 11.5833 2.77868 17.25 6.05033L44.25 21.6388C49.9167 24.9104 49.9167 33.0896 44.25 36.3612Z"
+                ></path>
+              </svg>
+            </span>
+          </button>
+          <a href="#" class="enlace-reproducir">Reproducir</a>
+        </div>
+        <h2>EL HOYO</h2>
+        <div class="info">
+          <p>2018</p>
+          <p>1 h 48 min</p>
+          <div class="rating">+16</div>
+        </div>
+        <p class="description">
+          Los reclusos de una cárcel vertical viven asignados a un nivel
+          concreto. Para comer, deben racionar los alimentos que encuentran en
+          una plataforma que va de una planta a otra. Dirigida por Galder
+          Gaztelu-Urrutia, "El hoyo" es una retorcida metáfora social sobre el
+          lado más oscuro y codicioso de la humanidad.
+        </p>
+      </div>
+    </div>
+    <!--Fin de Ventana Modal-->
+
+    <script src="script.js"></script>
+    <script src="modal.js"></script>
+  </body>
+</html>
